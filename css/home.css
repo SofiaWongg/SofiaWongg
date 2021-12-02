@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.first-name,
+.last-name {
+    font-family: Mistral;
+    color: white;
+    display: flex;
+}
+
+
+/**For Mobile Styles**/
+@media only screen and (max-width: 400px) {
+    .first-name,
+    .last-name {
+        font-size: 35vw;
+    }
+}
+
+
+/*For Tablet Styles*/
+@media only screen and (min-width: 401px) and (max-width: 960px){
+    .name {
+        flex-direction: row;
+    }
+
+    .first-name,
+    .last-name {
+        font-size: 25vw;
+    }
+}
+
+
+/*For Desktop Styles*/
+@media only screen and (min-width: 961px) {
+    .name {
+        flex-direction: row;
+    }
+
+    .first-name,
+    .last-name {
+        font-size: 20vw;
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Angelina's Contact Form</title>
+    <meta name="viewport" 
+      content="width=device-width,initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/styles.css" >
+  </head>
+    <body>
+        <div class="container">
+            <div id="nav">
+                <ul>
+                    <li class = "navbtn"><a href="index.html">HOME</a></li>
+                    <li class = "navbtn"><a href="about.html">ABOUT</a></li>
+                    <li class = "navbtn"><a href="collection.html">COLLECTIONS</a></li>
+                    <li class = "navbtn"><a href="form.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <form method="post" action="/">
+                    <fieldset>
+                    <legend>CONTACT</legend>
+                    
+                    <div class="groups">
+                        <div class="grouping">
+                        <label for="name">Name</label>
+                            <input type="text" id="name" value="" required>
+
+                        <label for="user_email">Email</label>
+                            <input type="email" id="user_email" value="" required>
+
+                        <label for="subject">Subject</label>
+                            <input type="text" id="subject" value="" required>
+                        </div>
+                        
+                        <div class="grouping">
+                        <label for="message">Message</label>
+                            <textarea id="message" name="message" required> 
+
+                            </textarea>
+                        </div>
+                    </div>
+
+                    <br> <br>
+                    <button class="formbtn" type="submit">
+                        SUBMIT
+                    </button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="footer">
+                <h5><br>Created for COMP 126 Fall 2021.</h5>
+            </div>
+
+        </div>
+    </body>
+
+</html>

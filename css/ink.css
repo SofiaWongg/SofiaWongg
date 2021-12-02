@@ -1,0 +1,192 @@
+body {
+    background-color: rgb(224,224,224);
+    font-family: 'Oxygen Mono', monospace;
+}
+
+#photoGrid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 250px);
+    grid-gap: 6px;
+    row-gap: 6px;
+    overflow: hidden;
+}
+
+h1{
+    font-size: 35px;
+}
+
+#button{
+    background-color: #3A5F6E;
+    height: 2%;
+    min-height: 15px;
+    width: 2%;
+    border: none;
+    padding: 15px;
+    margin: 0;
+    transition: .30s;
+}
+
+#button:hover, button:focus{
+    background-color: rgb(130,142,130); 
+    color: white;
+  }
+
+.arrow {
+    border: solid rgb(224,224,224);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+#back{
+    padding: 0%;
+    
+}
+
+aside{
+    grid-column: 1;
+    grid-row: 1/span3;
+}
+
+.a{
+    transition-duration: .3s;
+    grid-column: 2/span 1;
+    grid-row: 1/span 1;
+}
+
+.b{
+    transition-duration: .3s;
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.c{
+    transition-duration: .3s;
+    grid-column: 4;
+    grid-row: 1/span 2;
+}
+
+.d{
+    transition-duration: .3s;
+    grid-column: 2;
+    grid-row: 2/span 2;
+}
+
+.e{
+    transition-duration: .3s;
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.f{
+    transition-duration: .3s;
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.g{
+    transition-duration: .3s;
+    grid-column: 4;
+    grid-row: 3;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    transition-duration: .3s;
+}
+
+.a:hover, .a:focus{
+    opacity: 30%;
+}
+
+.b:hover, .b:focus{
+    opacity: 30%;
+}
+
+.c:hover, .c:focus{
+    opacity: 30%;
+}
+
+.d:hover, .d:focus{
+    opacity: 30%;
+}
+
+.e:hover, .e:focus{
+    opacity: 30%;
+}
+
+.f:hover, .f:focus{
+    opacity: 30%;
+}
+
+.g:hover, .g:focus{
+    opacity: 30%;
+}
+
+.hiddenText{
+    padding: 10%;
+}
+
+p{
+    overflow: hidden;
+}
+
+
+
+@media screen and (max-width: 500px) {
+    #photoGrid{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 325px repeat(7, 1fr);
+        grid-gap: 3px;
+        overflow: scroll;
+    }
+
+    aside{
+        grid-column: 1;
+        grid-row: 1;
+        
+    }
+
+    .a{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .b{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    .c{
+        grid-column: 1;
+        grid-row: 4;
+    }
+    
+    .d{
+        grid-column: 1;
+        grid-row: 5;
+    }
+    
+    .e{
+        grid-column: 1;
+        grid-row: 6;
+    }
+    
+    .f{
+        grid-column: 1;
+        grid-row: 7;
+    }
+    
+    .g{
+        grid-column: 1;
+        grid-row: 8;
+    }
+    
+}
