@@ -1,6 +1,6 @@
 body {
     background-color: rgb(224,224,224);
-    font-family: 'Oxygen Mono', monospace;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #photoGrid{
@@ -16,18 +16,18 @@ h1{
     font-size: 35px;
 }
 
-button{
+#button{
     background-color: #3A5F6E;
-    height: 7%;
-    min-height: 45px;
-    width: 10%;
+    height: 2%;
+    min-height: 15px;
+    width: 2%;
     border: none;
-    padding: 1rem 2rem;
+    padding: 15px;
     margin: 0;
     transition: .30s;
 }
 
-button:hover, button:focus{
+#button:hover, button:focus{
     background-color: rgb(130,142,130); 
     color: white;
   }
