@@ -19,9 +19,10 @@
 
 .first-name,
 .last-name {
-    font-family: Mistral;
     color: white;
     display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Taprom', cursive;
 }
 
 
